@@ -1,0 +1,283 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{article}
+
+% See geometry.pdf to learn the layout options. There are lots.
+\usepackage[papersize={8.5in,11in}, total={7in,9.5in},top=20mm, left=20mm, includefoot]{geometry}
+
+\setlength{\parindent}{20pt}
+\setlength{\parskip}{1pt}
+
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+
+%\usepackage{graphicx}[pdftex]
+%\usepackage{wrapfig}
+\usepackage{caption}
+\linespread{0.95}
+%\usepackage{setspace}
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+\usepackage{xspace}
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Palatino}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+%set the bibliography style
+\usepackage[super,sort&compress,comma]{natbib}
+%\bibliographystyle{natbib}
+\bibliographystyle{unsrt}
+\renewcommand\bibnumfmt[1]{\emph{\textbf{\small{#1)}}}}
+\setlength\bibsep{2pt}
+
+%set up a header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\textbf{GB Gloor}} \chead{\textbf{Curriculum Vitae}} \rhead{\textbf{ \today}}
+\newcommand{\HRule}{\rule{\linewidth}{.8mm}}
+\setlength{\headheight}{15pt}
+\makeatletter
+\renewcommand\section{\@startsection
+	{section}{1}{0in}% %name level indent
+	{0.1\baselineskip}%
+	{0\baselineskip}%
+	{\sffamily\bfseries\large}
+	%
+}
+\makeatother
+
+\makeatletter
+\renewcommand\subsection{\@startsection
+	{subsection}{2}{0.25in}% %name level indent
+	{0.1\baselineskip}%
+	{0\baselineskip}%
+	{\textbf}%
+}
+\makeatother
+
+\makeatletter
+\renewcommand\subsubsection{\@startsection
+	{subsubsection}{3}{0.25in}% %name level indent
+	{0.1\baselineskip}%
+	{0\baselineskip}%
+	{\textit}%
+}
+\makeatother
+
+\begin{document}
+\begin{center}
+\textbf{Gregory Gloor, PhD}
+
+Professor, Department of Biochemistry
+
+Schulich School of Medicine and Dentistry
+
+Western University
+
+Tel: (519) 661-3526; email: ggloor@uwo.ca 
+ 
+http://www.academicbiography.uwo.ca/profile.php?\&n=ggloor
+\end{center}
+\section{Expertise and Research Interests}
+\begin{description}\itemsep=-2pt
+\item Composition and function of the human and other microbiomes. We use and develop tools to examine 16S rRNA gene composition, gene expression of mixed population samples, and metabolomic analysis of clinical samples. I teach a graduate course on the use of compositional data analysis techniques to examine transcriptomes, microbiomes and other types of complex data sets derived from high throughput sequencing. 
+\item Protein evolution. We use and develop tools to examine how protein structure and function is maintained in response to sequences changes. We have a special interest in identifying the role that variable positions play in protein evolution. I teach an undergraduate course in protein sequence alignment and proteins sequence-structure alignment. 
+\item Computational biology and that application of techniques for compositional data analysis to the above problems. Our primary contributions so far have been the ALDEx2 tool for the analysis of high throughput experiments that generate counts per sequence tag: 16S rRNA gene sequencing, transcriptomics and selex-type experiments.
+\end{description}
+
+\section{Education and Training}
+\begin{description}\itemsep=-2pt
+\item 1988-1990  Postdoctoral Fellow.  University of Wisconsin - Madison - Genetics. Supervisor: Dr. William Engels.
+\item 1998  Ph.D, University of Western Ontario, Department of Biochemistry. Supervisor: Dr. George Chaconas
+\item 1983  HBSc, University of Western Ontario, Genetics
+\end{description}
+
+\section{Employment}\itemsep=-2pt
+\begin{description}\itemsep=-2pt
+\item 2002-present, Professor, University of Western Ontario - Biochemistry
+\item 1997-2002, Associate Professor, University of Western Ontario - Biochemistry
+\item 1993-1997,	Assistant Professor, University of Western Ontario - Biochemistry
+\item 1990-1992,	Assistant Professor, Memorial University of Newfoundland - Medicine
+\end{description}
+
+\section{Awards, Honours, Fellowships}
+\begin{description}\itemsep=-2pt
+\item 2014,       Faculty Development Award: Attended week-long course on Compositional Data Analysis (UdG, Spain)
+\item 2011-2013,       Faculty Scholar
+\item 2009,		University Student's Council Teaching Honor Roll
+\item 2007,		University Student's Council Teaching Honor Roll
+\item 2005,		Schulich School of Medicine Teaching Award
+\item 2004,		WL Magee Teaching Award, Biochemistry, UWO
+\item 1993 - 1998,	Salary Award, Medical Research Council of Canada (MRC), Development Grant in Molecular Biology
+\item 1984 -1988, 	K. M. Hunter Fellowship, National Cancer Institute of Canada.
+\item 1983,	       	Graduate Entrance Scholarship, UWO.
+\end{description}
+
+\section{HQP Training Summary}
+
+\begin{description}\itemsep=-2pt
+\item Graduate Student: 10;  Undergraduate Student: 30; Postdoctoral Fellow: 2; 
+\item Graduate Advisory Committee: 30; Thesis Defense: 68; Qualifying Examiner: 46.
+\end{description}
+
+\section{Scholarly and Professional Activities Summary}
+
+\subsection{Grants and Awards Panels, Editorial}
+
+\begin{description}\itemsep=-2pt
+\item 2015-present, Associate Editor, Microbiome
+\item 2015, Ontario Genomics Institute: SPARC and Genome Canada review panel
+\item 2014-present, CRC College of Reviewers
+\item 2012-2015,	Editorial Board member Microbiome
+\item 2010-2014,	Member CIHR Genetics panel 
+\item 2008-present,	IODE Doctoral Scholarship committee 
+\item 2006-2010, 	NCIC Model Organisms Panel B2 
+\item 1998, 1999, 2000, 2003, 2004, 2005, 2006, 2007, 2008 MRC/CIHR BMB/Genetics/Genomics invitee
+\item 1995-2001, 	Peer review organizer for the Foundation for Gene and Cell Therapy 
+\item 1997-1999,  	OGS Biochemistry/Biophysics panel 
+\item 1999, 		Chair OGS Biochemistry/Biophysics panel 
+\item 1997–2000, 	NCIC Virology and Molecular Biology Committee, 
+\end{description}
+
+\subsection{Recent Presentations and Invitations}
+\begin{description}\itemsep=-2pt
+\item 2015,  Invited speaker at Exploring Human Host-Microbiome Interactions in Health and Disease 2015, Cambridge, UK
+\item 2015,  Invited paper at CoDaWork 2015, Girona, Spain
+\item 2015,  Applying compositional data framework to microbiome datasets,  Canadian Society of Microbiology workshop 2015, Saskatoon, Canada
+\item 2015,  Invited speaker, University of Guelph Bioinformatics group
+\item 2014,     Invited seminar, Dept. of Biochemistry, University of Calgary
+\item 2014, 	Invited participant at NIH sponsored Microbiome Quality Control Initiative: only Canadian group invited, Rockville, MD, USA
+\item 2013, 	Invited speaker at Fondation Merieux Conference on Better Foods for Better Health, Annecy, France
+\item 2013, 	Invited speaker at the Institute of Genome Sciences seminar series, University of Maryland, Baltimore, USA
+\item 2013, 	Invited expert participant at African International Conference and Workshop on the Microbiome and Probiotics, Nairobi, Kenya
+\item 2011, 	Invited speaker at the RePOOPulating the gut: therapeutic microbial preparations to eradicate recurrent C.difficile infections in Canada, Toronto
+\item 2011, 	Invited expert participant at International Society for the Application of Probiotics and Prebiotics, Berkley, CA
+%\item 2010, 	Invited platform speaker at the Ontario Illumina Users Group 
+%\item 2008, 	Invited speaker at University of North Carolina-Charlotte Department of Bioinformatics, 
+\end{description}
+
+%\renewcommand{\tab}{\hspace{1.5in}}
+
+
+%\renewcommand{\tab}{\hspace{0.25in}}
+\renewcommand\refname{}
+\clearpage
+\subsection{Peer Reviewed Papers since 2010:\\}
+\ 
+
+\ 
+H-index: 30. 
+
+\ 
+Erdos number 3 (two ways). 
+
+\nocite{gloor:cjm,gloor2016s,Gloor:2015,mcmillan:2015,Bisanz:2015aa,Goneau:2015aa,Macklaim:2015aa,St-Denis:2014aa,Brace:2014,mcmurrough:2014,kernohan:2014,Reid:2014aa,fernandes:2014,Urbaniak:2014aa,Rahat-Rozenbloom:2014aa,Gan:2014aa,rosenthal:2014,Dickson:2014aa,Bisanz:2014aa,Bisanz:2014ab,Di-Bella:2013aa,DaSilva:2013aa,Lahiry:2013aa,fernandes:2013,Burton:2013,macklaim:2013,Kim:2013aa,Petrof:2013aa,MacPhee:2013aa,Allen-Vercoe:2012,Anukam:2013aa,Allen-Vercoe:2012a,Macklaim:2012,Genereaux:2012,Kvas:2012,Dickson:2012,Turowec:2011a,Takeuchi:2011a,Macklaim:2011,Hummelen:2011,Reid:2011a,Duncan:2011,Hoke:2010a,Dickson:2010,Gloor:2010a,Fernandes:2010b,Kleinstiver:2010,Duncan:2010,Fernandes:2010a,Hummelen:2010,Gloor:2010}
+\vspace{-12pt}\bibliography{bibdesk_refs}
+
+\subsection{Non Peer Reviewed Manuscripts}\  \\
+
+Russell J Dickson and Gregory B Gloor. Xorro: Rapid paired-end read overlapper. arXiv preprint arXiv:1304.4620, 2013.
+
+Russell J Dickson and Gregory B Gloor.The MIp  toolset:an efficient algorithm for calculating mutual information in protein alignments. arXiv preprint arXiv:1304.4573, 2013.\\
+
+\subsection{Software releases}\ \\
+
+ALDEx2. ALDEx tool to examine compositional high-throughput sequence data with Welch's t-test and Wilcoxon rank test. https://github.com/ggloor/ALDEx2, and\\ http://www.bioconductor.org/packages/release/bioc/html/ALDEx2.html last update Sept, 2014\\
+
+Languages and utilities: R, bash, Perl,  awk, \LaTeX, Markdown, HTML, git, svn
+
+\newpage
+\section{Research Funding}
+\subsection{Role of intestinal microbiota in non-alcoholic fatty liver disease pre and post bariatric surgery:}~CIHR, 2013-2016
+\subsubsection*{Investigators:}~ALLARD, Johane P (PI),COMELLI, Elena M; GLOOR, Gregory B; JACKSON, Timothy D; LOU, Wen-Yi W; OKRAINEC, Allan 
+\subsubsection*{Keywords:}~BARIATRIC SURGERY; DIET; INFLAMMATION; LIPOPOLYSACCHARIDE; MICROBIOTA; NON- ALCOHOLIC FATTY LIVER DISEASE; STEATOHEPATITIS
+\subsubsection{Total:522169, direct to Gloor: 25000}
+\subsubsection*{Abstract:}~	Fatty liver disease is a fat buildup in the liver with or without inflammation. The disease can damage the liver and sometimes requires liver transplantation. Almost all people who are morbidly obese and require weight-loss surgery have fatty liver. New research shows that the kind of bacteria in the gut might contribute to the development of obesity, fatty liver and inflammation. Weight-loss surgery clearly changes the gut bacteria, probably because of the surgical changes to the gut, the weight loss and the food intake, which is very different after surgery. We think that differences in the gut bacteria could influence fatty liver in morbidly obese patients before and after weight-loss surgery. Therefore, we would like to measure the bacteria in the stool of patients with fatty liver undergoing weight-loss surgery A) at the time of the surgery, to see, if there is a difference between those who have fatty liver without inflammation and those who have the more severe form of fatty liver with inflammation. We are also planning to measure bacterial products in the stool and in the blood of our patients. B) We then want to follow the same patients for one year after their weight loss surgery to find out, whether changes in the gut bacteria are connected to improvement or worsening of their fatty liver disease. This study is new and important, as it could lead to new treatments for patients with fatty liver disease
+
+\subsection{Intestinal microbiome and extremes of atherosclerosis.}~CIHR, 2014-2016
+
+\subsubsection*{Investigators:}~SPENCE, J. David (PI), Co-Investigators: ALLEN-VERCOE, Emma; GLOOR, Gregory B; REID, Gregor
+
+\subsubsection*{Keywords:}~	ATHEROSCLEROSIS; BIOCHEMISTRY; INTESTINAL MICROBIOME; METABONOMICS; MICROBIOLOGY; NUTRITION; RENAL FUNCTION; ULTRASOUND 
+\subsubsection{Total:211600, direct to Gloor: 25000}
+
+\subsubsection*{Abstract:}~	Atherosclerosis is the underlying cause of heart attacks, and of a substantial proportion of strokes. Our project will lead to an entirely new approach to treating atherosclerosis to prevent heart attacks, strokes, and dementia due to strokes: replacement of harmful intestinal bacteria with beneficial bacteria. Meat and egg yolks are harmful to the arteries. Besides cholesterol and saturated fat (in meat), they contain nutrients (lecithin and L-carnitine) that are converted by the bacteria in the intestine to trimethylamine, which in turn is converted in the liver to trimethylamine n-oxide (TMAO). In this project we plan to study patients with extremes of carotid atherosclerosis not explained by traditional risk factors. The 250 with unexplained atherosclerosis have far more plaque than would be expected from their age, sex, blood pressure, cholesterol, smoking and diabetes; the 250 with protection have little or no plaque despite high levels of risk factors. These two extremes are very powerful for genetic studies and studies of new risk factors; they reduce by ¾ the number of patients who need to be studied. We plan to: 1. Identify patterns of intestinal bacteria associated with high levels of TMAO and other bacterial metabolic products in the blood and urine 2. identify patterns of intestinal bacteria that are associated with excess carotid plaque not explained by traditional coronary risk factors, and patterns of bacteria associated with protection from traditional risk factors, 3. study the relationship between usual diet and high levels of TMAO and other bacterial metabolic products in the blood and urine, 4. Study the relationship of impaired kidney function to high levels of TMAO and other bacterial metabolic products in the blood and urine, 5. Collect blood for extraction and banking of DNA and plasma for future genetic studies as funding becomes available. 
+
+\newpage
+\subsection{Non-Alcoholic Fatty Liver Disease: Role of Intestinal Microbiota and n-3 Polyunsaturated}~\\ %~\\
+\textbf{\underline{Fatty Acid Supplementation}} CIHR, 2013-2016
+\subsubsection*{Investigators:}~ALLARD, Johane P (PI), co-investigators: COMELLI, Elena M; GLOOR, Gregory B; LOU, Wen-Yi W
+\subsubsection*{Keywords:}~BIFIDOBACTERIA; ENDOTOXIN; FISH-OIL; INFLAMMATION; INTESTINAL MICROBIOTA; NON- ALCOHOLIC FATTY LIVER DISEASE; NUTRITION; POLYUNSATURATED FATTY ACIDS; SHORT- CHAIN FATTY ACIDS
+\subsubsection{Total:363051, direct to Gloor: 17000}
+\subsubsection*{Abstract:}~	About 20-30\% of Canadians have non-alcoholic fatty liver disease, which is a fat buildup in the liver with or without inflammation. The disease can damage the liver and sometimes requires liver transplantation. Our team has received a grant from the Canadian Institute of Health Reseaearch (CIHR) to examine the role of diet, especially antioxidant vitamins and fat, in fatty liver disease. We also give fish oil to patients with fatty liver to see if this is beneficial for their liver. This project is almost completed. In addition, we have collected stool from our patients, as the latest research shows that the kind of bacteria in the gut could also influence the course of fatty liver disease. We are now seeking funding to characterize the bacteria in the stool and to measure bacterial products in stool and blood of patients with fatty liver compared to healthy controls. This study is new and important, as it could lead to new treatments for patients with fatty liver disease. If the gut bacteria are different in patients with fatty liver, we might in the future try to treat fatty liver with beneficial bacteria (probiotics) or carbohydrates that promote the growth of these "good" bacteria (prebiotics). Nobody has ever tested, whether fish oil could change human gut
+bacteria. Therefore we would also like to measure gut bacteria before and after 1 year treatment with fish oil in patients with fatty liver.
+
+\subsection{The Vaginal Microbiome Project Team}~CIHR, 2010-2015
+\subsubsection*{Investigators:}~MONEY, Deborah M; BOCKING, Alan D; HEMMINGSEN, Sean M; HILL, Janet E; REID, Gregor (Co-PIs), co-investigators: DUMONCEAUX, Timothy J; GLOOR, Gregory B; LINKS, Matthew G; O'DOHERTY, Kieran C; TANG, Patrick K; VAN SCHALKWYK, Julianne E; YUDIN, Mark H
+\subsubsection*{Keywords:}~BACTERIAL VAGINOSIS; GYNECOLOGY; INFECTION; MICROBIOME; PRETERM BIRTH; WOMEN'S HEALTH
+\subsubsection{Total:1745341, direct to Gloor: 15000}
+\subsubsection*{Abstract:}~	Recent advances in genomic sequencing and bioinformatics have provided adequate tools to investigate the human microbiome, and the opportunity for Canadian research teams to uniquely contribute to deciphering the role that microbes play in health and disease. Studies of the human vaginal microbiome represent a niche area where Canada has significant expertise, research capacity, and preexisting infrastructure upon which to build. The Vaginal Microbiome Project Team - VMPT - will place Canada at the forefront of research into the role of vaginal bacterial communities in health and disease. While our current collaboration represents an established scientific and clinical program, success in this competition will allow the extended team to not only identify the bacterial species present under various conditions over a woman's lifespan, but develop novel diagnostic tools and interventions to restore and retain health. Major research themes will continue with understanding of the core vaginal microbiome, but also explore the associations behind vaginal microbiota and preterm delivery, genital tract infection,
+and reproductive health. Conditions associated with an imbalance in vaginal microbiota afflict several million Canadian women each year, and accumulate health care costs of billions of dollars annually. The Emerging Team Grant will lead to significant breakthroughs in the care of women in Canada and around the world.
+
+\newpage
+\subsection{ Elucidating the factors that determine success in fecal transplant therapy for C.difficile infection}~Southeastern Ontarion Academic Medical Organization: 2014-2015
+\subsubsection*{Investigators:}~ PETROF, E (PI), coinvestigators: ROPELSKI, Mark, ALLEN-VERCOE, Emma, GLOOR, Gregory
+\subsubsection*{Keywords:}~ CLOSTRIDIUM DIFFICILE, ECOSYSTEM THERAPEUTICS, INTESTINAL MICROBIOTA, FECAL TRANSPLANT
+\subsubsection{Total:92000, direct to Gloor: 14000}
+\subsubsection*{Abstract:}~Clostridium difficile infection (CDI) of the colon is a major cause of morbidity and mortality for patients and can disrupt the hospital’s ability to provide its full range of care. A patient being treated for a first episode of CDI has a 10-25\% chance of developing recurrent CDI, and patients who have had one episode of recurrent CDI have a 50-65\% chance of developing multiple episodes of recurrent CDI1. Treatment options for recurrent CDI are very limited as oral vancomycin, the drug of choice, carries a failure rate of around 70\%. Recurrent infection despite antibiotics has thus become a key clinical dilemma but recently fecal microbial therapy (FMT) or “stool transplant” (infusing donor stool into the intestine of the recipient to re-establish normal bacterial flora) was recently shown in a randomized clinical trial to be highly effective for recurrent CDI2. There is a direct link between recurrent disease and intestinal dysbiosis i.e. there is an inability of certain individuals to “re-establish” their normal protective bacterial flora3-5, and FMT is effective at re-establishing this colonization resistance against C.difficile.
+	
+\subsection{Maternal-Infant Microbiome and Immunity (MIMI) Network}~CIHR, 2012-2015
+\subsubsection*{Investigators:}~KOLLMANN, Tobias R(PI) coinvestigators:GLOOR, Gregory B; REID, Gregor
+\subsubsection*{Keywords:}~GLOBAL HEALTH; IMMUNOLOGY; MATERNAL HEALTH; MICROBIOME; PEDIATRICS
+\subsubsection{Total:600000, direct to Gloor: 200000}
+\subsubsection*{Abstract:}~	There are ten times as many bacterial cells in our body than human cells. This community of microorganisms (called the microbiome) plays an important role in influencing human health. For example, in our gut, bacteria aid in the digestion and absorption of nutrients, keeping dangerous microbes in check and directing our defense system's response. Thus, the understanding of how the microbiome contributes to human health is of great importance. Understanding the human microbiome is a daunting task because of its complexity. First, there are very different communities of bacteria present in different parts of the body. Second, these bacterial communities arise from different initial sources and interact with the human defense system in different ways. Third, the human microbiome is affected by a variety of genetic and environmental factors. Finally, people living in different areas of the world have different bacteria living in and on them. These and other factors require that the study of the microbiome should be approached from a global health perspective. We propose the establishment of MIMI, the Maternal-Infant Microbiome and Immunity Network. This network is centered on how the microbiome and immune system interact in the mother and child, as the mother is the initial source of the child's microbiome. MIMI will formalize the collaboration of three groups with expertise in paediatrics and immunology, maternal health and probiotics, and DNA sequencing and data analysis. By bringing
+these groups with complementary expertise together, MIMI will amplify each group's strength, build research capacity in the field of microbiome analysis, and to transfer knowledge and thus inform maternal and child health policy. MIMI will contribute towards self-sustainability by making Network Members competitive for national and international funding.
+
+\newpage
+\subsection{Function of maize endophytic microbiome:} ~NSERC ENGAGE, 2014-2015
+\subsubsection*{Investigators:}~ GLOOR, GREGORY
+Microbial ecology, plant endophytic organisms, microbial genomics, microbial metatranscriptomics, crop yield enhancement, maize microbiome, RNA-seq, metagenomics
+\subsubsection{Total:25000, direct to Gloor: 25000}
+\subsubsection*{Abstract:}~	A\&L Biologicals has a mandate to develop and implement agricultural tests that growers can use for the production and maintenance of healthy soil, and the associated high crop yields. A\&L Biologicals identified a farmer, Dean Glenny, who has established an extraordinarily productive ecosystem through non-traditional farming methods that produces an average of twice that of adjacent farms. Molecular fingerprinting was used to demonstrate that bacterial species (the microbiome) associated with the soil and internal to the corn plant (endopytic), are different between the high and normal producing fields.
+The work in this proposal will determine the functional differences between high and normal yield sites by examining the endophytic corn sap microbiome; the microbiome that A\&L Biologicals has identified to have the greatest difference between sites. Dr. Gloor has developed approaches that use high throughput sequencing to characterize the molecular functions of entire bacterial communities and their effect on the host. He will apply those methods and identify functional differences between the high and low yield sites in both the microbial community and the corn plant.
+The results of the functional analysis will be done jointly by scientists from both A\&L Biologicals and Dr. Gloor's research unit. The resulting analysis of both the growth-promoting pathways in corn and in the microbiome, will identify key bioindicators of organisms and functions associated with high production agro-ecosystems for future field testing.
+The analysis will will provide detailed information as to which organism should be selected for development of biofertilizer formulations, what functions are required for corn growth in a high yield site, and demonstrate that existing, and developing molecular methods used by A\&L Biologicals can provide accurate data for use as a service tool to identify healthy soils/plant tissue.
+
+\subsection{Meta-transcriptome of high-yield corn endophytic microbiome}~Ontario Centre of Excellence, 2014-2015
+\subsubsection*{Investigators:}~ GLOOR, GREGORY
+\subsubsection*{Keywords:}~Microbial ecology, plant endophytic organisms, microbial genomics, microbial metatranscriptomics, crop yield enhancement, maize microbiome, RNA-seq, metagenomics
+\subsubsection{Total:25000, direct to Gloor: 25000}
+\subsubsection*{Abstract:}~	A\&L Biologicals has a mandate to develop and implement agricultural tests that growers can use for the production and maintenance of healthy soil, and the associated high crop yields. A\&L Biologicals identified a farmer, Dean Glenny, who has established an extraordinarily productive ecosystem through non-traditional farming methods that produces an average of twice that of adjacent farms. Molecular fingerprinting was used to demonstrate that bacterial species (the microbiome) associated with the soil and internal to the corn plant (endopytic), are different between the high and normal producing fields.
+The work in this proposal will determine the functional differences between high and normal yield sites by examining the endophytic corn sap microbiome; the microbiome that A\&L Biologicals has identified to have the greatest difference between sites. Dr. Gloor has developed approaches that use high throughput sequencing to characterize the molecular functions of entire bacterial communities and their effect on the host. He will apply those methods and identify functional differences between the high and low yield sites in both the microbial community and the corn plant.
+The results of the functional analysis will be done jointly by scientists from both A\&L Biologicals and Dr. Gloor's research unit. The resulting analysis of both the growth-promoting pathways in corn and in the microbiome, will identify key bioindicators of organisms and functions associated with high production agro-ecosystems for future field testing.
+The analysis will will provide detailed information as to which organism should be selected for development of biofertilizer formulations, what functions are required for corn growth in a high yield site, and demonstrate that existing, and developing molecular methods used by A\&L Biologicals can provide accurate data for use as a service tool to identify healthy soils/plant tissue.
+
+\newpage
+\subsection{Molecular covariation in protein families}~ Current NSERC Discovery grant, 2010-2015
+\subsubsection*{Investigators:}~ GLOOR, Gregory	
+\subsubsection*{Keywords:}~ Proteins, molecular coevolution, computational biology, molecular biology, protein evolution, epistasis, molecular evolution, mutual information, yeast genetics, phosphoglycerate kinase
+\subsubsection{Total:155000, direct to Gloor: 155000}
+\subsubsection*{Abstract:}~	Proteins are one of the fundamental building blocks of the cells in our bodies. They are composed of long chains of 20 amino acids, and the sequence of the amino acids along the protein direct the shape and function of the protein. The same protein in different organisms usually have a dramatically amino acid order and composition, demonstrating that the same protein can be constructed in many different ways. We are seeking to understand how the sequence of amino acids directs the folding and function of the protein by studying the positions that vary among the proteins with the same function in different organisms. We have generated a series of tools that find pairs of positions in the sequence that covary, that is, if one position changes the other position changes. We propose to examine how these covarying positions affect the structure and function of the protein. 
+
+\subsection{Exploiting the therapeutic effects of the fecal microbiome in bariatric care}~ CIHR Team grant in Bariatric Care (ranked first in competition), 2014-2019
+\subsubsection*{Investigators:}~PIs: ALLARD, Johane P ; GAISANO, co-applicants:Herbert Y , BANKS, Kate; COMELLI, Elena M; GLOOR, Gregory B; HOTA, Susy S; JACKSON, Timothy D; LOU, Wen- Yi W; OKRAINEC, Allan; PHILPOTT, Dana J; POUTANEN, Susan M 
+\subsubsection*{Keywords:}~ BARIATRIC SURGERY; DIET; INFLAMMATION; LIPOPOLYSACCHARIDE; MICROBIOTA; NON- ALCOHOLIC FATTY LIVER DISEASE; STEATOHEPATITIS
+\subsubsection{Total:1,500,000, direct to Gloor: 80000}
+
+\subsection{Developing molecular methods as diagnostic tools to identify biological factors contributing to crop productivity and soil health}~ Agriculture and Agrifoods Canada, Agricultural Innovation Program, 2015-2017 
+\subsubsection*{Investigators:}~A\&L Bioligicals led by Dr. George Lazarovitz (CSO), GLOOR, G academic co-applicant.
+\subsubsection*{Keywords:}~soil health, soil ecology, soil microbiology, soilborne disease, disease suppressive soil, ecology, diagnostics, tomato, potato, bacteria, fungi, yield 
+\subsubsection{Total:600,000, direct to Gloor: 120000}
+\subsubsection*{Abstract:}~	The population of the planet reached seven billion this year. With more mouths to feed, with declining arable land per capita and with potential crop losses caused by more unpredictable climatic conditions, global agriculture faces new challenges. Increasing costs of petroleum based products continues to force growers to look for crop production technologies that require lower inputs both in cost and energy. Sustainable agriculture and agroecology are two concepts most considered as a means to reduce inputs and maintain high yielding plant agriculture. Soil, with its complex but well understood chemical and physical properties, still requires greater understanding of biology. High yields can sometimes be attributed to healthy biology in the soil, while sub-maximal yields may sometimes be attributed to a detrimental complex of soil organisms reducing growth potential of the plant. Plant disease suppressiveness has been hailed as one of the bets methods to mange soilborne diseases which often can only be require highly toxic fumigants. can be transferred to other soils. In order to sustainably manage their soil for optimal plant productivity, farmers must start monitoring and understanding their soil’s microbiology.
+\end{document}
