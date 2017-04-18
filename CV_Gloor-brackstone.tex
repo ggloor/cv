@@ -1,0 +1,273 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt]{article}
+
+% See geometry.pdf to learn the layout options. There are lots.
+\usepackage[papersize={8.5in,11in}, total={7in,9.5in},top=20mm, left=20mm, includefoot]{geometry}
+
+\setlength{\parindent}{20pt}
+\setlength{\parskip}{1pt}
+
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+
+%\usepackage{graphicx}[pdftex]
+%\usepackage{wrapfig}
+\usepackage{caption}
+\linespread{0.95}
+%\usepackage{setspace}
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+\usepackage{xspace}
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Palatino}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+%set the bibliography style
+\usepackage[super,sort&compress,comma]{natbib}
+%\bibliographystyle{natbib}
+\bibliographystyle{unsrt}
+\renewcommand\bibnumfmt[1]{\emph{\textbf{\small{#1)}}}}
+\setlength\bibsep{2pt}
+
+%set up a header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\textbf{GB Gloor}} \chead{\textbf{Curriculum Vitae}} \rhead{\textbf{ \today}}
+\newcommand{\HRule}{\rule{\linewidth}{.8mm}}
+\setlength{\headheight}{15pt}
+\makeatletter
+\renewcommand\section{\@startsection
+	{section}{1}{0in}% %name level indent
+	{0.1\baselineskip}%
+	{0\baselineskip}%
+	{\sffamily\bfseries\underline}
+	%
+}
+\makeatother
+
+\makeatletter
+\renewcommand\subsection{\@startsection
+	{subsection}{2}{0in}% %name level indent
+	{0.1\baselineskip}%
+	{0\baselineskip}%
+	{\bfseries\emph}%
+}
+\makeatother
+
+\makeatletter
+\renewcommand\subsubsection{\@startsection
+	{subsubsection}{3}{0.25in}% %name level indent
+	{0.1\baselineskip}%
+	{0\baselineskip}%
+	{\textit}%
+}
+\makeatother
+
+\begin{document}
+\begin{center}
+\textbf{Gregory Gloor, PhD}
+
+Professor, Department of Biochemistry
+
+Schulich School of Medicine and Dentistry
+
+Western University
+
+Tel: (519) 661-3526; email: ggloor@uwo.ca 
+ 
+http://ggloor.github.io
+\end{center}
+\section*{Degrees and Certificates}
+\begin{description}\itemsep=-2pt
+\item 2014  Certificate in Compositional Data Analysis, Accredited by the International Association for Mathematical Geosciences, University of Girona, Spain 
+\item 1988  Ph.D, University of Western Ontario, Department of Biochemistry. Supervisor: Dr. George Chaconas
+\item 1983  HBSc, University of Western Ontario, Genetics
+\end{description}
+
+\section*{Current Appointment}\itemsep=-2pt
+\begin{description}\itemsep=-2pt
+\item 2002-present, Professor, University of Western Ontario - Biochemistry
+\end{description}
+
+\section*{Past Appointments}\itemsep=-2pt
+\begin{description}\itemsep=-2pt
+\item 1997-2002, Associate Professor, University of Western Ontario - Biochemistry
+\item 1993-1997,	Assistant Professor, University of Western Ontario - Biochemistry
+\item 1990-1992,	Assistant Professor, Memorial University of Newfoundland - Medicine
+\item 1988-1990,  Postdoctoral Fellow.  University of Wisconsin - Madison - Genetics. Supervisor: Dr. William Engels.
+\end{description}
+
+\section*{Peer Reviewed Grants}
+
+\subsection*{Active Grants}
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2013-2016\newline 
+Role: Coinvestigator
+\newline \textbf{PI:} ALLARD, Johane P
+\newline \textbf{Total}: 522169, direct to Gloor: 25000
+& 
+\textbf{Title:} Role of intestinal microbiota in non-alcoholic fatty liver disease pre and post bariatric surgery\newline
+\textbf{Funding Source:} CIHR\newline
+\textbf{Co-investigators:} COMELLI, Elena M; GLOOR, JACKSON, Timothy D; LOU, Wen-Yi W; OKRAINEC, Allan\\
+\end{tabular}
+\end{center}
+%%%%%
+
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2015-2017\newline 
+Role: Coinvestigator
+\newline \textbf{PI:} PETROF, Elaine
+\newline \textbf{Total}: 40700 award to Gloor
+& 
+\textbf{Title:} Microbes that Matter: defining optimal formulations for Microbial Ecosystem Therapeutics\newline
+\textbf{Funding Source:} NIH RO2\newline
+\textbf{Co-investigators:} ALLEN-VERCOE, Emma, GLOOR, Gregory B\\
+\end{tabular}
+\end{center}
+%%%%%%
+
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2013-2016\newline 
+Role: Principal investigator
+\newline \textbf{PI:} GLOOR, G
+\newline \textbf{Total}: 155000
+& 
+\textbf{Title:} Molecular covariation in protein families\newline
+\textbf{Funding Source:} NSERC Discovery Grant\newline
+\textbf{Co-investigators:} None\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2014-2019\newline 
+Role: Coinvestigator
+\newline \textbf{PI:} ALLARD, Johane P ; GAISANO, Herbert Y
+\newline \textbf{Total}: 1,500,000
+& 
+\textbf{Title:} Exploiting the therapeutic effects of the fecal microbiome in bariatric care \newline
+\textbf{Funding Source:} CIHR Team grant in Bariatric Care\newline
+\textbf{Co-investigators:} BANKS, Kate; COMELLI, Elena M; GLOOR, Gregory B; HOTA, Susy S; JACKSON, Timothy D; LOU, Wen- Yi W; OKRAINEC, Allan; PHILPOTT, Dana J; POUTANEN, Susan M \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2015-2017 \newline 
+Role: Coinvestigator
+\newline \textbf{PI:} A\&L Bioligicals led by Dr. George Lazarovitz (CSO)
+\newline \textbf{Total}: 600,000
+& 
+\textbf{Title:} Developing molecular methods as diagnostic tools to identify biological factors contributing to crop productivity and soil health \newline
+\textbf{Funding Source:} Agriculture and Agrifoods Canada, Agricultural Innovation Program\newline
+\textbf{Co-investigators:} BANKS, Kate; COMELLI, Elena M; GLOOR, Gregory B; HOTA, Susy S; JACKSON, Timothy D; LOU, Wen- Yi W; OKRAINEC, Allan; PHILPOTT, Dana J; POUTANEN, Susan M \\
+\end{tabular}
+\end{center}
+
+
+\subsection*{Past Grants}
+
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2014-2016 \newline 
+Role: Coinvestigator
+\newline \textbf{PI:} SPENCE, J. David
+\newline \textbf{Total}: 211600
+& 
+\textbf{Title:} Intestinal microbiome and extremes of atherosclerosis \newline
+\textbf{Funding Source:} CIHR\newline
+\textbf{Co-investigators:} ALLEN-VERCOE, Emma; GLOOR, Gregory B; REID, Gregor \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2010-2015 \newline 
+Role: Coinvestigator
+\newline \textbf{PI:} MONEY, Deborah M
+\newline \textbf{Total}: 1745341
+& 
+\textbf{Title:} The Vaginal Microbiome Project Team \newline
+\textbf{Funding Source:} CIHR Team Grant\newline
+\textbf{Co-investigators:} BOCKING, Alan D; HEMMINGSEN, Sean M; HILL, Janet E; REID, Gregor (Co-PIs), DUMONCEAUX, Timothy J; GLOOR, Gregory B; LINKS, Matthew G; O'DOHERTY, Kieran C; TANG, Patrick K; VAN SCHALKWYK, Julianne E; YUDIN, Mark H \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2014-2015 \newline 
+Role: Coinvestigator
+\newline \textbf{PI:} PETROF, Elaine
+\newline \textbf{Total}: 1745341
+& 
+\textbf{Title:} Elucidating the factors that determine success in fecal transplant therapy for C.difficile \newline
+\textbf{Funding Source:} Southeastern Ontarion Academic Medical Organization\newline
+\textbf{Co-investigators:} ROPELSKI, Mark, ALLEN-VERCOE, Emma, GLOOR, Gregory \\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2012-2015 \newline 
+Role: Coinvestigator
+\newline \textbf{PI:} KOLLMANN, Tobias R
+\newline \textbf{Total}: 600000
+& 
+\textbf{Title:} Maternal-Infant Microbiome and Immunity (MIMI) Network\newline
+\textbf{Funding Source:} CIHR \newline
+\textbf{Co-investigators:} GLOOR, Gregory B; REID, Gregor \\
+\end{tabular}
+\end{center}
+	
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2014-2015 \newline 
+Role: Principal investigator
+\newline \textbf{PI:} GLOOR, Gregory
+\newline \textbf{Total}: 25000
+& 
+\textbf{Title:} Function of maize endophytic microbiome\newline
+\textbf{Funding Source:} NSERC ENGAGE \newline
+\textbf{Co-investigators:} None \\
+\end{tabular}
+\end{center}
+	
+\begin{center}
+\begin{tabular}{p{2.5in}p{4in}}
+2014-2015 \newline 
+Role: Principal investigator
+\newline \textbf{PI:} GLOOR, Gregory
+\newline \textbf{Total}: 25000
+& 
+\textbf{Title:} Meta-transcriptome of high-yield corn endophytic microbiome\newline
+\textbf{Funding Source:} Ontario Centre of Excellence \newline
+\textbf{Co-investigators:} None\\
+\end{tabular}
+\end{center}
+	
+\vspace{0.25in}
+\subsection*{Journal Articles\\}
+\nocite{gloorAJS:2016,Gloor:2016cjm,gloor2016s,Martz:2016aa,Urbaniak:2016aa,Bisanz:2016aa,Urbaniak:2016ab,Gloor:2015,mcmillan:2015,Bisanz:2015aa,Goneau:2015aa,Macklaim:2015aa,St-Denis:2014aa,Brace:2014,mcmurrough:2014,kernohan:2014,Reid:2014aa,fernandes:2014,Urbaniak:2014aa,Rahat-Rozenbloom:2014aa,Gan:2014aa,rosenthal:2014,Dickson:2014aa,Bisanz:2014aa,Bisanz:2014ab,Di-Bella:2013aa,DaSilva:2013aa,Lahiry:2013aa,fernandes:2013,Burton:2013,macklaim:2013,Kim:2013aa,Petrof:2013aa,MacPhee:2013aa,Allen-Vercoe:2012,Anukam:2013aa,Allen-Vercoe:2012a,Macklaim:2012,Genereaux:2012,Kvas:2012,Dickson:2012,Turowec:2011a,Takeuchi:2011a,Macklaim:2011,Hummelen:2011,Reid:2011a,Duncan:2011,Hoke:2010a,Dickson:2010,Gloor:2010a,Fernandes:2010b,Kleinstiver:2010,Duncan:2010,Fernandes:2010a,Hummelen:2010,Gloor:2010}
+\vspace{-12pt}\bibliography{bibdesk_refs}
+
+\subsection*{Software releases}\ \\
+
+ALDEx2. ALDEx tool to examine compositional high-throughput sequence data with Welch's t-test and Wilcoxon rank test. https://github.com/ggloor/ALDEx2, and\\ http://www.bioconductor.org/packages/release/bioc/html/ALDEx2.html last update Sept, 2014\\
+
+
+\end{document}

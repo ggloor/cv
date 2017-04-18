@@ -17,8 +17,32 @@
 
 \usepackage{graphicx}
 \usepackage{amssymb}
+\usepackage{etaremune}
+\bibliographystyle{natbib}
 
+\makeatletter
+\long\def\thebibliography#1{%
+  \section*{\refname}%
+  \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}
+  \settowidth{\dimen0}{\@biblabel{#1}}%
+  \setlength{\dimen2}{\dimen0}%
+  \addtolength{\dimen2}{\labelsep}
+  \sloppy
+  \clubpenalty 4000 
+  \@clubpenalty 
+  \clubpenalty 
+  \widowpenalty 4000
+  \sfcode `\.\@m
 
+  \renewcommand{\labelenumi}{\@biblabel{\theenumi}} % labels like [3], [2], [1]
+  \begin{etaremune}[labelwidth=\dimen0,leftmargin=\dimen2]\@openbib@code
+}
+\def\endthebibliography{\end{etaremune}}
+\def\@bibitem#1{%
+  \item \if@filesw\immediate\write\@auxout{\string\bibcite{#1}{\the\value{enumi}}}\fi\ignorespaces
+}
+\makeatother
+%\renewcommand\bibnumfmt[1]{\emph{\textbf{\small{#1)}}}}
 %\usepackage{graphicx}[pdftex]
 %\usepackage{wrapfig}
 \usepackage{caption}
@@ -35,11 +59,9 @@
 \setmonofont[Scale=MatchLowercase]{Andale Mono}
 
 %set the bibliography style
-\usepackage[super,sort&compress,comma]{natbib}
-%\bibliographystyle{natbib}
-\bibliographystyle{unsrt}
-\renewcommand\bibnumfmt[1]{\emph{\textbf{\small{#1)}}}}
-\setlength\bibsep{2pt}
+%\usepackage[super,sort&compress,comma]{natbib}
+%%\bibliographystyle{unsrt}
+
 
 %set up a header
 \usepackage{fancyhdr}
@@ -87,13 +109,13 @@ Western University
 
 Tel: (519) 661-3526; email: ggloor@uwo.ca 
  
-http://www.academicbiography.uwo.ca/profile.php?\&n=ggloor
+http://ggloor.github.io
 \end{center}
 \section{Expertise and Research Interests}
 \begin{description}\itemsep=-2pt
-\item Composition and function of the human and other microbiomes. We use and develop tools to examine 16S rRNA gene composition, gene expression of mixed population samples, and metabolomic analysis of clinical samples. I teach a graduate course on the use of compositional data analysis techniques to examine transcriptomes, microbiomes and other types of complex data sets derived from high throughput sequencing. 
+\item Composition and function of the human and other microbiomes. I use and develop tools to examine 16S rRNA gene composition, gene expression of mixed population samples, and metabolomic analysis of clinical samples. I teach a graduate course on the use of compositional data analysis techniques to examine transcriptomes, microbiomes and other types of complex data sets derived from high throughput sequencing. 
 \item Protein evolution. We use and develop tools to examine how protein structure and function is maintained in response to sequences changes. We have a special interest in identifying the role that variable positions play in protein evolution. I teach an undergraduate course in protein sequence alignment and proteins sequence-structure alignment. 
-\item Computational biology and that application of techniques for compositional data analysis to the above problems. Our primary contributions so far have been the ALDEx2 tool for the analysis of high throughput experiments that generate counts per sequence tag: 16S rRNA gene sequencing, transcriptomics and selex-type experiments.
+\item Computational biology and that application of techniques for compositional data analysis to the above problems. Our primary contributions so far have been the ALDEx2 tool in Bioconductor for the analysis of high throughput experiments that generate counts per sequence tag: 16S rRNA gene sequencing, transcriptomics and selex-type experiments. I have further tools under development, and have contributed new visualization methods (effect-size plots) to the field.
 \end{description}
 
 \section{Education and Training}
@@ -128,7 +150,7 @@ http://www.academicbiography.uwo.ca/profile.php?\&n=ggloor
 
 \begin{description}\itemsep=-2pt
 \item Graduate Student: 10;  Undergraduate Student: 30; Postdoctoral Fellow: 2; 
-\item Graduate Advisory Committee: 30; Thesis Defense: 68; Qualifying Examiner: 46.
+\item Graduate Advisory Committee: 30; Thesis Defence: 68; Qualifying Examiner: 46.
 \end{description}
 
 \section{Scholarly and Professional Activities Summary}
@@ -136,7 +158,12 @@ http://www.academicbiography.uwo.ca/profile.php?\&n=ggloor
 \subsection{Grants and Awards Panels, Editorial}
 
 \begin{description}\itemsep=-2pt
-\item 2015-present, Associate Editor, Microbiome
+\item 2016, Chair, CIHR Project Grant Scheme
+\item 2016, Member, Agence Nationale de la Recherche, Preindustrial Biotechnology Demonstrator, Paris, France
+\item 2016-present, Senior Editor, Microbiome
+\item 2016, Western Science and Engineering Review Board Member
+\item 2016, CIHR Operating Grant Review Panel Chair
+\item 2015-2016, Associate Editor, Microbiome
 \item 2015, Ontario Genomics Institute: SPARC and Genome Canada review panel
 \item 2014-present, CRC College of Reviewers
 \item 2012-2015,	Editorial Board member Microbiome
@@ -152,8 +179,11 @@ http://www.academicbiography.uwo.ca/profile.php?\&n=ggloor
 
 \subsection{Recent Presentations and Invitations}
 \begin{description}\itemsep=-2pt
-\item 2016,  Invited speaker at Exploring Human Host-Microbiome Interactions in Health and Disease 2015, Cambridge, UK
-\item 2016,  Invited workshop organizer at Exploring Human Host-Microbiome Interactions in Health and Disease 2015, Cambridge, UK \item 2016,	 Invited speaker at Symposium on Synthetic Biology, Western University, London,  CA
+\item 2017,  upcoming invited external: Canadian Statistical Sciences Institute Microbiome Planning meeting speaker and discussion leader, Canadian Society of Microbiology invited speaker, Keynote Microbial Ecology 2017.  
+\item 2016,	 Invited speaker in the Biostatistics and Epidemiology Department, Western University, London,  CA
+\item 2016,  Invited speaker at Exploring Human Host-Microbiome Interactions in Health and Disease 2016, Cambridge, UK
+\item 2016,  Invited workshop organizer at Exploring Human Host-Microbiome Interactions in Health and Disease 2016, Cambridge, UK 
+\item 2016,	 Invited speaker at Symposium on Synthetic Biology, Western University, London,  CA
 \item 2016,  Invited workshop presenter, The Human Microbiome and Epidemiology, 2016 Epidemiology Congress of the Americas, Miami, USA
 \item 2016,  Invited presentation/workshop, Infection, Inflammation and Immunity course, The Arctic University of Norway, Tromso, NO
 \item 2016,  Oral Presentation, Great Lakes Bioinformatics/Canadian Computational Biology Conference, Toronto, CA
@@ -168,7 +198,7 @@ http://www.academicbiography.uwo.ca/profile.php?\&n=ggloor
 \item 2013, 	Invited expert participant at African International Conference and Workshop on the Microbiome and Probiotics, Nairobi, Kenya
 \item 2011, 	Invited speaker at the RePOOPulating the gut: therapeutic microbial preparations to eradicate recurrent C.difficile infections in Canada, Toronto
 \item 2011, 	Invited expert participant at International Society for the Application of Probiotics and Prebiotics, Berkley, CA
-%\item 2010, 	Invited platform speaker at the Ontario Illumina Users Group 
+\item 2010, 	Invited platform speaker at the Ontario Illumina Users Group 
 %\item 2008, 	Invited speaker at University of North Carolina-Charlotte Department of Bioinformatics, 
 \end{description}
 
@@ -178,17 +208,17 @@ http://www.academicbiography.uwo.ca/profile.php?\&n=ggloor
 %\renewcommand{\tab}{\hspace{0.25in}}
 \renewcommand\refname{}
 \clearpage
-\subsection{Peer Reviewed Papers since 2010:\\}
+\subsection{Peer Reviewed Papers:\\}
 \ 
 
 \ 
-H-index: 31. 
+H-index: 33 (Google Scholar)
 
 \ 
 Erdos number 3 (two ways). 
-
-\nocite{gloorAJS:2016,Gloor:2016cjm,gloor2016s,Martz:2016aa,Urbaniak:2016aa,Bisanz:2016aa,Urbaniak:2016ab,Gloor:2015,mcmillan:2015,Bisanz:2015aa,Goneau:2015aa,Macklaim:2015aa,St-Denis:2014aa,Brace:2014,mcmurrough:2014,kernohan:2014,Reid:2014aa,fernandes:2014,Urbaniak:2014aa,Rahat-Rozenbloom:2014aa,Gan:2014aa,rosenthal:2014,Dickson:2014aa,Bisanz:2014aa,Bisanz:2014ab,Di-Bella:2013aa,DaSilva:2013aa,Lahiry:2013aa,fernandes:2013,Burton:2013,macklaim:2013,Kim:2013aa,Petrof:2013aa,MacPhee:2013aa,Allen-Vercoe:2012,Anukam:2013aa,Allen-Vercoe:2012a,Macklaim:2012,Genereaux:2012,Kvas:2012,Dickson:2012,Turowec:2011a,Takeuchi:2011a,Macklaim:2011,Hummelen:2011,Reid:2011a,Duncan:2011,Hoke:2010a,Dickson:2010,Gloor:2010a,Fernandes:2010b,Kleinstiver:2010,Duncan:2010,Fernandes:2010a,Hummelen:2010,Gloor:2010}
-\vspace{-12pt}\bibliography{bibdesk_refs}
+\nocite{Ettinger:2017aa,Al:2017aa,Wolfs:2016aa,Slade:2016ab,Rahat-Rozenbloom:2016aa,Slade:2016aa,Petrova:2016aa,gloorAJS:2016,Gloor:2016cjm,Urbaniak:2016ac,Martz:2016aa,gloor2016s,Gloor:2015,Wong:2016aa,Urbaniak:2016aa,Asemaninejad:2016aa,McMillan:2016aa,Walton:2016aa,Bisanz:2016aa,Bisanz:2015aa,St-Denis:2015aa,Goneau:2015ab,McMillan:2015aa,Martz:2015aa,Macklaim:2015aa,Yang:2015aa,Rahat-Rozenbloom:2014ab,mcmurrough:2014,Urbaniak:2014ab,Gan:2014aa,Reid:2014aa,Rahat-Rozenbloom:2014aa,Brace:2014,Bisanz:2014aa,kernohan:2014,Dickson:2014aa,Urbaniak:2014aa,Rosenthal:2014,Bisanz:2014ab,fernandes:2014,Di-Bella:2013aa,DaSilva:2013aa,fernandes:2013,Kim:2013aa,MacPhee:2013aa,Petrof:2013aa,Lahiry:2013aa,macklaim:2013,Anukam:2013aa,Burton:2013,Allen-Vercoe:2012,Allen-Vercoe:2012a,Macklaim:2012,Li:2012aa,Genereaux:2012,Kvas:2012,Dickson:2012,Turowec:2011a,Takeuchi:2011a,Macklaim:2011,Duncan:2011,Reid:2011a,Hummelen:2011,Hoke:2010a,Dickson:2010,Gloor:2010a,Fernandes:2010b,Kleinstiver:2010,Duncan:2010,Hummelen:2010,Fernandes:2010a,Gloor:2010,Lahiry:2009,Dunn:2008,Holmes:2006,Gloor:2005,Martin:2005,Dempsey:2004,Qin:2004,Gloor:2004,Coveny:2002,Gloor:2002,Gloor:2001,kari2001computer,Krishna:2001,kari2000using,Gloor:2000,Bassi:2000,daley1999circular,Gloor:1999,gloor1999towards,kari1999compute,Lankenau:1998,Gloor:1998,Dray:1997,Keeler:1997,Keeler:1996,Andrews:1995,Nassif:1994,Gloor:1993,Gloor:1991,Gloor:1988,Gloor:1986,Chaconas:1985a,Chaconas:1985,Faust:1984a,Faust:1984,Chaconas:1984aa}
+\bibliographystyle{unsrt}
+\vspace{-2pt}\bibliography{bibdesk_refs}
 
 \subsection{Non Peer Reviewed Manuscripts}\  \\
 
@@ -198,12 +228,12 @@ Russell J Dickson and Gregory B Gloor.The MIp  toolset:an efficient algorithm fo
 
 \subsection{Software releases}\ \\
 
-ALDEx2. ALDEx tool to examine compositional high-throughput sequence data with Welch's t-test and Wilcoxon rank test. https://github.com/ggloor/ALDEx2, and\\ http://www.bioconductor.org/packages/release/bioc/html/ALDEx2.html last update Sept, 2014\\
+ALDEx2. ALDEx tool to examine compositional high-throughput sequence data with Welch's t-test and Wilcoxon rank test. https://github.com/ggloor/ALDEx2, and\\ http://www.bioconductor.org/packages/release/bioc/html/ALDEx2.html last update Dec, 2016\\
 
 Languages and utilities: R, bash, Perl,  awk, \LaTeX, Markdown, HTML, git, svn
 
 \newpage
-\section{Research Funding}
+\section{Current and Recent Research Funding}
 \subsection{Role of intestinal microbiota in non-alcoholic fatty liver disease pre and post bariatric surgery:}~CIHR, 2013-2016
 \subsubsection*{Investigators:}~ALLARD, Johane P (PI),COMELLI, Elena M; GLOOR, Gregory B; JACKSON, Timothy D; LOU, Wen-Yi W; OKRAINEC, Allan 
 \subsubsection*{Keywords:}~BARIATRIC SURGERY; DIET; INFLAMMATION; LIPOPOLYSACCHARIDE; MICROBIOTA; NON- ALCOHOLIC FATTY LIVER DISEASE; STEATOHEPATITIS
@@ -236,7 +266,7 @@ bacteria. Therefore we would also like to measure gut bacteria before and after 
 and reproductive health. Conditions associated with an imbalance in vaginal microbiota afflict several million Canadian women each year, and accumulate health care costs of billions of dollars annually. The Emerging Team Grant will lead to significant breakthroughs in the care of women in Canada and around the world.
 
 \newpage
-\subsection{ Elucidating the factors that determine success in fecal transplant therapy for C.difficile infection}~Southeastern Ontarion Academic Medical Organization: 2014-2015
+\subsection{ Elucidating the factors that determine success in fecal transplant therapy for C. difficile infection}~Southeastern Ontarion Academic Medical Organization: 2014-2015
 \subsubsection*{Investigators:}~ PETROF, E (PI), coinvestigators: ROPELSKI, Mark, ALLEN-VERCOE, Emma, GLOOR, Gregory
 \subsubsection*{Keywords:}~ CLOSTRIDIUM DIFFICILE, ECOSYSTEM THERAPEUTICS, INTESTINAL MICROBIOTA, FECAL TRANSPLANT
 \subsubsection{Total:92000, direct to Gloor: 14000}
@@ -269,7 +299,7 @@ The results of the functional analysis will be done jointly by scientists from b
 The analysis will will provide detailed information as to which organism should be selected for development of biofertilizer formulations, what functions are required for corn growth in a high yield site, and demonstrate that existing, and developing molecular methods used by A\&L Biologicals can provide accurate data for use as a service tool to identify healthy soils/plant tissue.
 
 \newpage
-\subsection{Molecular covariation in protein families}~ Current NSERC Discovery grant, 2010-2015
+\subsection{Molecular covariation in protein families}~ Current NSERC Discovery grant, 2015-2020
 \subsubsection*{Investigators:}~ GLOOR, Gregory	
 \subsubsection*{Keywords:}~ Proteins, molecular coevolution, computational biology, molecular biology, protein evolution, epistasis, molecular evolution, mutual information, yeast genetics, phosphoglycerate kinase
 \subsubsection{Total:155000, direct to Gloor: 155000}
