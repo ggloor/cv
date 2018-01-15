@@ -1,0 +1,19 @@
+pdf("data/teaching.pdf")
+plot(d$year, d$avg, type="n", xlab="Year", ylab="Avg Score", ylim=c(3,7))
+points(d$year[d$course=="MS138"], d$avg[d$course=="MS138"], pch=19, cex=1.4,col=rgb(0,0,0,0.5))
+points(d$year[d$course=="BC410"], d$avg[d$course=="BC410"], pch=15, cex=1.4,col=rgb(0,0,0,0.5))
+points(d$year[d$course=="BC445"], d$avg[d$course=="BC445"], pch=17, cex=1.4,col=rgb(0,0,0,0.5))
+points(d$year[d$course=="BC3390"], d$avg[d$course=="BC3390"], pch=18, cex=1.6,col=rgb(0,0,0,0.5))
+points(d$year[d$course=="BC9545"], d$avg[d$course=="BC9545"], pch=0, cex=1.4,col=rgb(0,0,0,0.5))
+points(d$year[d$course=="BUS629"], d$avg[d$course=="BUS629"], pch=1, cex=1.4,col=rgb(0,0,0,0.5))
+
+leg <- c("MS138", "BC410", "BC445", "BC3390", "BC9545","BUS629")
+p <- c(19,15,17,18,0,1)
+
+legend(2010,5, legend=leg, pch=p, col=rgb(0,0,0,0.5))
+rect(1997.5, 2.5, 2002, 7.5, col=rgb(0,0,0,0.2), border=NA)
+text(1994.5, 7, labels="Assistant")
+text(1999.5, 7, labels="Associate")
+text(2010, 7, labels="Professor")
+dev.off()
+
