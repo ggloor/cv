@@ -7,17 +7,17 @@
 \contentsline {subsection}{\numberline {6.1}Scholarly Presentations and Invitations}{3}
 \contentsline {subsection}{\numberline {6.2}Media Interviews and Public Presentations}{5}
 \contentsline {subsection}{\numberline {6.3}Peer Reviewed Papers:}{8}
-\contentsline {subsubsection}{\numberline {6.3.1}Academic trivia}{8}
 \contentsline {subsection}{\numberline {6.4}Non Peer Reviewed Manuscripts}{16}
 \contentsline {subsection}{\numberline {6.5}Software releases}{17}
-\contentsline {subsection}{\numberline {6.6}Research Funding History}{18}
-\contentsline {section}{\numberline {7}Teaching and Training}{22}
-\contentsline {subsection}{\numberline {7.1}Course-based teaching}{22}
-\contentsline {subsection}{\numberline {7.2}Summary of HQP}{23}
-\contentsline {subsection}{\numberline {7.3}Graduate Students Supervised}{23}
-\contentsline {section}{\numberline {8}Service to the University and Broader Community}{25}
-\contentsline {subsection}{\numberline {8.1}University Committees}{25}
-\contentsline {subsection}{\numberline {8.2}Faculty Committees}{25}
-\contentsline {subsection}{\numberline {8.3}Department Committees}{25}
-\contentsline {subsection}{\numberline {8.4}Board memberships}{26}
-\contentsline {subsection}{\numberline {8.5}Grants and Awards Panels, Editorial membership}{26}
+\contentsline {subsection}{\numberline {6.6}Academic trivia}{17}
+\contentsline {subsection}{\numberline {6.7}Research Funding History}{18}
+\contentsline {section}{\numberline {7}Teaching and Training}{23}
+\contentsline {subsection}{\numberline {7.1}Course-based teaching}{23}
+\contentsline {subsection}{\numberline {7.2}Summary of HQP}{24}
+\contentsline {subsection}{\numberline {7.3}Graduate Students Supervised}{24}
+\contentsline {section}{\numberline {8}Service to the University and Broader Community}{26}
+\contentsline {subsection}{\numberline {8.1}University Committees}{26}
+\contentsline {subsection}{\numberline {8.2}Faculty Committees}{26}
+\contentsline {subsection}{\numberline {8.3}Department Committees}{26}
+\contentsline {subsection}{\numberline {8.4}Board memberships}{27}
+\contentsline {subsection}{\numberline {8.5}Grants and Awards Panels, Editorial membership}{27}
