@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {6.1}Scholarly Presentations and Invitations}{3}
 \contentsline {subsection}{\numberline {6.2}Media Interviews and Public Presentations}{5}
 \contentsline {subsection}{\numberline {6.3}Peer Reviewed Papers:}{8}
-\contentsline {subsection}{\numberline {6.4}Non Peer Reviewed Manuscripts}{16}
+\contentsline {subsection}{\numberline {6.4}Non Peer Reviewed Manuscripts}{17}
 \contentsline {subsection}{\numberline {6.5}Software releases}{17}
 \contentsline {subsection}{\numberline {6.6}Academic trivia}{17}
 \contentsline {subsection}{\numberline {6.7}Research Funding History}{18}
