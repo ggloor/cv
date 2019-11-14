@@ -1,20 +1,29 @@
-I have three sets of expertise relevant to this application
-
- 1) Protein evolution. I use and develop tools to examine how protein structure and function is maintained in response to sequence changes. I have a special interest in identifying the role that variable positions play in protein evolution.  I teach an undergraduate course in protein sequence alignment and proteins sequence-structure alignment. With respect to this application this expertise is of critical use when annotating bacterial genomes and metagenomes.
+I have three sets of expertise relevant to this application and am an internationally-recognized expert on microbiome analysis
+1) Protein evolution. I use and develop tools to examine how protein structure and function is maintained in response to sequence changes. I have a special interest in identifying the role that variable positions play in protein evolution. I teach an undergraduate course in protein sequence alignment and proteins sequence-structure alignment. With respect to this application this expertise is of critical use when annotating bacterial genomes and metagenomes.
 2) Composition and function of the human and other microbiomes. I use and develop tools to examine 16S rRNA gene composition, gene content and expression of mixed population samples (meta-genomes and meta-transcriptomes), and metabolomic analysis of clinical samples. With respect to this application I will supervise the 16S rRNA gene sequencing analysis and the meta-genomic analysis of the samples collected. I have attended workshops in proper metagenomic binning and annotation. I teach a graduate course on the use of compositional data analysis techniques to examine transcriptomes, microbiomes and other types of complex data sets derived from high throughput sequencing.
-3) Computational biology and that application of techniques for compositional data analysis to the above problems. My primary contributions so far have been the ALDEx2 tool in Bioconductor for the analysis of high throughput experiments that generate counts per sequence tag: 16S rRNA gene sequencing, transcriptomics and selex-type experiments. Dan Giguere, one of the students on the application has developed a Shiny app for the analysis of such datasets in Biocondcutor. I have contributed new visualization methods (effect-size plots) to the field. I have conducted invited workshops, and have made many invited international talks on these methods:
+3) Computational biology and the application of techniques for compositional data analysis to the above problems. My primary contributions so far have been the ALDEx2 tool in Bioconductor for the analysis of high throughput experiments that generate counts per sequence tag: 16S rRNA gene sequencing, transcriptomics and selex-type experiments. Ben Joris, one of the students on the application has developed pipelines for assembly, binning and annotation of MAGs. I have contributed new visualization methods (effect-size plots) to the field.
+
+Workshops and Speaking
+
+2019, Invited speaker, Causes and implications of compositionality on microbiome interpretation. Barcelona Micriobiome Debates, Barcelona, Spain
+
+2019, Invited speaker, A probabilistic compositional effect size metric for use in microbiome datasets. Problems in microbiome analysis: Simons Foundation, New Yort, United States
+
+2018, Invited speaker, Robust analysis of meta-transcriptomes and meta-genomes using compositional data analysis. EMBL-EBI, EBI Seminar Series,, United Kingdom
+
 2017, Invited speaker, EMBL-EBI Industrial Program Workshop - The human microbiome: challenges and opportunities for novel therapeutics, Hinxton, England
-2017, Invited speaker Canadian Society of Microbiology, Waterloo, Ontari,
+
 2017, Canadian Statistical Sciences Institute Microbiome Planning Meeting speaker and discussion leader, Winnipeg,Manitoba
 Invited speaker at Exploring Human Host-Microbiome Interactions in Health and Disease 2016, Wellcome Trust, Cambridge, University
+
 2016, Invited workshop organizer at Exploring Human Host-Microbiome Interactions in Health and Disease 2016, Cambridge, UK
+
 2016, Invited workshop presenter, The Human Microbiome and Epidemiology, 2016 Epidemiology Congress of the Americas, Miami, USA
+
 2016, Invited presentation/workshop, Infection, In ammation and Immunity course, The Arctic University of Norway, Tromso, NO
+
 2015, Invited speaker at Exploring Human Host-Microbiome Interactions in Health and Disease 2015, Cambridge, UK
-2015, Applying compositional data framework to microbiome datasets, Canadian Society
-of Microbiology workshop 2015, Saskatoon, Canada
-2015, Invited speaker, University of Guelph Bioinformatics group
+
 2014, Invited participant at NIH sponsored Microbiome Quality Control Initiative: only Canadian group invited, Rockville, MD, USA
-2013, Invited speaker at Fondation Merieux Conference on Better Foods for Better Health,
-Annecy, France
+
 2013, Invited speaker at the Institute of Genome Sciences seminar series, University of Maryland, Baltimore, USA

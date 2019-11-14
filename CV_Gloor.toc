@@ -7,9 +7,9 @@
 \contentsline {subsection}{\numberline {6.1}Scholarly Presentations and Invitations}{3}
 \contentsline {subsection}{\numberline {6.2}Media Interviews and Public Presentations}{5}
 \contentsline {subsection}{\numberline {6.3}Peer Reviewed Papers:}{8}
-\contentsline {subsection}{\numberline {6.4}Non Peer Reviewed Manuscripts}{17}
-\contentsline {subsection}{\numberline {6.5}Software releases}{17}
-\contentsline {subsection}{\numberline {6.6}Patent filings}{17}
+\contentsline {subsection}{\numberline {6.4}Non Peer Reviewed Manuscripts}{18}
+\contentsline {subsection}{\numberline {6.5}Software releases}{18}
+\contentsline {subsection}{\numberline {6.6}Patent filings}{18}
 \contentsline {subsection}{\numberline {6.7}Academic trivia}{18}
 \contentsline {subsection}{\numberline {6.8}Research Funding History}{19}
 \contentsline {section}{\numberline {7}Teaching and Training}{24}
