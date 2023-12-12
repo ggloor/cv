@@ -1,0 +1,59 @@
+---
+title: "Greg Gloor, PhD"
+geometry: margin=2cm
+urlcolor: blue
+classoption: onecolumn
+output:
+    pdf_document:
+        keep_tex: true
+        fig_caption: false
+        toc: false
+        toc_depth: 1
+    pandoc_args: [
+            "-V",
+        ]
+---
+
+\vspace{-1cm}
+
+![](gg_head.pdf){width=45% .centre}
+
+I am very honoured to be nominated for the position of Vice-President of
+the CoDa Association. I have a PhD in Biochemistry and a very broad
+research training that includes biochemistry, molecular biology,
+genetics, genomics, bioinformatics and most recently data analysis. I
+attended the 2014 CoDa course and found it to be invaluable because it introduced me to a wonderful
+community of like-minded people. I have attended every CoDaWorks since,
+making it a priority  to attend because of both the science and the
+social aspects. I had the good fortune to participate in the  L'Escala meeting where the CoDa Association was formed, and to participate the first ever general meeting.
+
+I have administrative expertise in a number of areas. I have been an
+Associate or Section Editor of the journal \emph{Microbiome} since its
+inception. I am Chair of the Canadian Institutes of Health Research peer
+review study section on `'Genomics, Systems and Computational Biology''.
+I am Professor and Chair of the Department of Biochemistry at the
+University of Western Ontario. I have an open and collaborative style of
+leadership and enjoy new opportunities.
+
+I have been a consistent and vocal promoter of compositional data
+analysis as a generally useful tool in biomedical research areas
+that include microbiome, metagenome and transcriptome analyses of high
+throughput sequencing analysis. I have travelled to four continents to
+give presentations and workshops on how to apply the principles of CoDa
+methods for the proper (or at least better) analysis of genomic and
+transcriptomic data. I have published many case studies, methods papers
+and software descriptions on how to apply CoDa methods to sequencing
+data. I freely admit that I am still learning --- but that is what makes
+science fun --- and I greatly appreciate the collaborations that I have
+formed with members of the Association, and the help I have received from the community.
+
+If elected, I will apply my lived experiences and work diligently on
+behalf of the CoDa Association to promote the proper analysis of
+biomedical data. I will be an impartial conduit for the views that members of the Association bring forward
+to the Board of Directors. I will ensure
+that the CoDa Association is as professionally and competently managed in
+the future, as it has been in the past. I will promote the CoDa
+Association and the CoDa Workshops and Courses for their valuable
+contributions to scientific discourse and education.
+
+
